@@ -1,47 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MMU</title>
-  <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/016/716/181/large_2x/website-3d-icon-png.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>login Arsip Digital</title>
+  <link rel="icon" href="https://disippus.trenggalekkab.go.id/wp-content/uploads/2021/09/jikn.png" />
   <style>
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
-      overflow: hidden;
-      font-family: sans-serif;
+      background-color: #eee;
     }
+
     .iframe-container {
-      position: relative;
       width: 100%;
-      height: 100vh;
+      height: 100dvh;
+      overflow: hidden;
     }
+
     iframe {
+      display: block;
       width: 100%;
-      height: 100%;
+      height: 100dvh;
       border: none;
-    }
-    .loader {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1.2rem;
-      color: #666;
-      z-index: 10;
     }
   </style>
 </head>
 <body>
   <div class="iframe-container">
-    <div class="loader" id="loader">Loading app...</div>
-    <iframe 
-      src="https://script.google.com/macros/s/AKfycbxfWGUnbsutOrkExdC0Dqq6umofAgAIrvwXQ73zQQNrZaGeDAfy_8XKodMTlcdQ4jlWuQ/exec" 
-      title="MMU AL HASANI"
-      onload="document.getElementById('loader').style.display='none';"
-      allowfullscreen>
+    <iframe
+      id="app"
+      src="https://script.google.com/macros/s/AKfycbyh5ab8hGoVbm96sWRfdU6m7TW4wnZycTOgTlRREKT1UO7w6FnS2G3SRwDCY5LEZcjgFw/exec?page=login"
+      scrolling="yes">
     </iframe>
   </div>
 </body>
